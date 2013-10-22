@@ -68,7 +68,7 @@ module.exports = function (grunt) {
           module:'taprBusy',
           base:''
         },
-        src:'angular-tapr-busy.html',
+        src:'template/angular-tapr-busy/angular-tapr-busy.html',
         dest: 'temp/templates.js'
       }
     },   

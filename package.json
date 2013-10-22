@@ -1,0 +1,25 @@
+{
+  "name": "angular-tapr-busy",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/scribblet/angular-tapr-busy.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-jshint": "~0.4.1",
+    "grunt-contrib-jasmine": "~0.4.2",
+    "grunt-contrib-cssmin": "~0.6.0",
+    "grunt-contrib-concat": "~0.2.0",
+    "grunt-angular-templates": "~0.3.2",
+    "grunt-regarde": "~0.1.1",
+    "grunt-contrib-connect": "~0.3.0",
+    "grunt-contrib-livereload": "~0.1.2"
+  },
+  "scripts": {
+    "test": "grunt test -v"
+  }
+}

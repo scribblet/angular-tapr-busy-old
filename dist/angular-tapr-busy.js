@@ -1,6 +1,6 @@
-angular.module('taprBusy',['ajoslin.promise-tracker', "template/angular-tapr-busy/busy.html"]);
+angular.module('taprBusy',['ajoslin.promise-tracker', "template/angular-tapr-busy/angular-tapr-busy.html"]);
 
-angular.module('taprBusy').value('taprBusyTemplateName','template/angular-busy/angular-busy.html');
+angular.module('taprBusy').value('taprBusyTemplateName','template/angular-tapr-busy/angular-tapr-busy.html');
 
 angular.module('taprBusy').directive('taprBusy',['promiseTracker','$compile','$templateCache','taprBusyTemplateName','$http',
   function(promiseTracker,$compile,$templateCache,taprBusyTemplateName,$http){
@@ -82,24 +82,42 @@ angular.module('taprBusy').directive('taprBusy',['promiseTracker','$compile','$t
 angular.module("taprBusy").run(["$templateCache", function($templateCache) {
 
   $templateCache.put("template/angular-tapr-busy/angular-tapr-busy.html",
-    "<div class=\"tapr-busy-default-wrapper\">\n" +
-    "   <div class=\"tapr-busy-default-sign\">\n" +
-    "      <div class=\"tapr-busy-default-spinner\">\n" +
-    "         <div class=\"bar1\"></div>\n" +
-    "         <div class=\"bar2\"></div>\n" +
-    "         <div class=\"bar3\"></div>\n" +
-    "         <div class=\"bar4\"></div>\n" +
-    "         <div class=\"bar5\"></div>\n" +
-    "         <div class=\"bar6\"></div>\n" +
-    "         <div class=\"bar7\"></div>\n" +
-    "         <div class=\"bar8\"></div>\n" +
-    "         <div class=\"bar9\"></div>\n" +
-    "         <div class=\"bar10\"></div>\n" +
-    "         <div class=\"bar11\"></div>\n" +
-    "         <div class=\"bar12\"></div>\n" +
-    "      </div>\n" +
-    "      <div class=\"tapr-busy-default-text\">Please Wait...</div>\n" +
-    "   </div>\n" +
+    "<div class=\"tapr-busy-default-wrapper\">\r" +
+    "\n" +
+    "   <div class=\"tapr-busy-default-sign\">\r" +
+    "\n" +
+    "      <div class=\"tapr-busy-default-spinner\">\r" +
+    "\n" +
+    "         <div class=\"bar1\"></div>\r" +
+    "\n" +
+    "         <div class=\"bar2\"></div>\r" +
+    "\n" +
+    "         <div class=\"bar3\"></div>\r" +
+    "\n" +
+    "         <div class=\"bar4\"></div>\r" +
+    "\n" +
+    "         <div class=\"bar5\"></div>\r" +
+    "\n" +
+    "         <div class=\"bar6\"></div>\r" +
+    "\n" +
+    "         <div class=\"bar7\"></div>\r" +
+    "\n" +
+    "         <div class=\"bar8\"></div>\r" +
+    "\n" +
+    "         <div class=\"bar9\"></div>\r" +
+    "\n" +
+    "         <div class=\"bar10\"></div>\r" +
+    "\n" +
+    "         <div class=\"bar11\"></div>\r" +
+    "\n" +
+    "         <div class=\"bar12\"></div>\r" +
+    "\n" +
+    "      </div>\r" +
+    "\n" +
+    "      <div class=\"tapr-busy-default-text\">Please Wait...</div>\r" +
+    "\n" +
+    "   </div>\r" +
+    "\n" +
     "</div>"
   );
 

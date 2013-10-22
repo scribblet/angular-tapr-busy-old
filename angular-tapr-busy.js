@@ -1,6 +1,6 @@
-angular.module('taprBusy',['ajoslin.promise-tracker', "template/angular-tapr-busy/busy.html"]);
+angular.module('taprBusy',['ajoslin.promise-tracker', "template/angular-tapr-busy/angular-tapr-busy.html"]);
 
-angular.module('taprBusy').value('taprBusyTemplateName','template/angular-busy/angular-busy.html');
+angular.module('taprBusy').value('taprBusyTemplateName','template/angular-tapr-busy/angular-tapr-busy.html');
 
 angular.module('taprBusy').directive('taprBusy',['promiseTracker','$compile','$templateCache','taprBusyTemplateName','$http',
   function(promiseTracker,$compile,$templateCache,taprBusyTemplateName,$http){

@@ -26,5 +26,5 @@
   ],
   "devDependencies": {
     "jquery": "~2.0.2"
-  },
+  }
 }

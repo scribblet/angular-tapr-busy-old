@@ -1,4 +1,4 @@
-angular.module('taprBusy',['ajoslin.promise-tracker', "template/angular-tapr-busy/angular-tapr-busy.html"]);
+angular.module('taprBusy',['ajoslin.promise-tracker']);
 
 angular.module('taprBusy').value('taprBusyTemplateName','template/angular-tapr-busy/angular-tapr-busy.html');
 

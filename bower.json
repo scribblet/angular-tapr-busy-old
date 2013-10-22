@@ -7,7 +7,7 @@
   ],
   "dependencies": {
     "angular": "1.0.8",
-    "angular-promise-tracker": "~1.3.3"    
+    "angular-promise-tracker": "latest"    
   },
   "ignore": [
     "**/.*",

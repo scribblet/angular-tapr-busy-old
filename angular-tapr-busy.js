@@ -59,15 +59,7 @@ angular.module('taprBusy').directive('taprBusy',['promiseTracker','$compile','$t
             return value;
           }
 
-
-          var first = true;
           scope.$watch('$taprBusyTracker.' + options.tracker + '.active()',function(value){
-            console.log('value changed');
-            if (first){
-              first = false;
-              return; //ignore first
-            }
-            toBoolean(value) ? console.log('removing hide class from template') : console.log('adding hide class from template')
             toBoolean(value) ? templateElement.removeClass('hide') : templateElement.addClass('hide');
           });
         }).error(function(data){

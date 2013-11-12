@@ -9,6 +9,7 @@ angular.module('taprBusy').directive('taprBusy',['promiseTracker','$compile','$t
       link: function(scope, element, attrs, fn) {
 
         var options = scope.$eval(attrs.taprBusy);
+        scope.busyText = attrs.busyText || 'Please wait...';
 
         if (typeof options === 'string'){
           options = {tracker:options};

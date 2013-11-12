@@ -9,6 +9,7 @@ angular.module('taprBusy').directive('taprBusy',['promiseTracker','$compile','$t
       link: function(scope, element, attrs, fn) {
 
         var options = scope.$eval(attrs.taprBusy);
+        scope.busyText = attrs.busyText || 'Please wait...';
 
         if (typeof options === 'string'){
           options = {tracker:options};
@@ -106,7 +107,7 @@ angular.module("taprBusy").run(["$templateCache", function($templateCache) {
     "\n" +
     "      </div>\r" +
     "\n" +
-    "      <div class=\"tapr-busy-default-text\">Please Wait...</div>\r" +
+    "      <div class=\"tapr-busy-default-text\">{{busyText}}</div>\r" +
     "\n" +
     "   </div>\r" +
     "\n" +

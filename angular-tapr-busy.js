@@ -22,7 +22,7 @@ angular.module('taprBusy').directive('taprBusy',['promiseTracker','$compile','$t
         if (!scope.$taprBusyTracker){
           scope.$taprBusyTracker = {};
         }
-        console.log('getting tracker');
+        
         scope.$taprBusyTracker[options.tracker] = promiseTracker(options.tracker);
 
         var position = element.css('position');
@@ -31,13 +31,10 @@ angular.module('taprBusy').directive('taprBusy',['promiseTracker','$compile','$t
         }
 
         var indicatorTemplateName = options.template ? options.template : taprBusyTemplateName;
-        console.log(indicatorTemplateName);
+        
         $http.get(indicatorTemplateName,{cache: $templateCache}).success(function(indicatorTemplate){
           options.backdrop = typeof options.backdrop === 'undefined' ? true : options.backdrop;
           var backdrop = options.backdrop ? '<div class="tapr-busy tapr-busy-backdrop"></div>' : '';
-
-
-
           var template = '<div class="tapr-busy tapr-busy-animation hide">'+ backdrop + indicatorTemplate+'</div>';
           var templateElement = $compile(template)(scope);
 
